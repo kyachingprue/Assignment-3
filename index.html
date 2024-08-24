@@ -22,12 +22,101 @@
       font-family: "Manrope", sans-serif;
     }
   </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-color': 'rgb(171, 239, 95)',
+            'btn-color-2': 'rgb(115, 115, 115)',
+            'border-color': 'rgb(233, 233, 233)',
+            'btn-color-3': 'rgba(171, 239, 95, 0.2)',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body class="google-font">
   <!--Header section -->
   <header class="container mx-auto bg-gradient-to-t to-orange-100 from-white">
     <!-- Navigation style starts -->
+    <nav>
+      <div class="navbar">
+        <div class="navbar-start ">
+          <div class="dropdown hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </li>
+
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"><i
+              class="-rotate-45 bg-btn-color text-black rounded-full w-7 h-7 fa-solid fa-arrow-right py-2"></i>Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
+
+          </ul>
+        </div>
+        <div>
+
+
+        </div>
+        <div class="navbar-end">
+          <div class="hidden md:block">
+            <a href="#"><i
+                class="fa-solid  bg-white rounded-full w-7 h-7 text-btn-color-2 fa-magnifying-glass py-2 px-2">
+              </i>
+            </a>
+            <a href="#">
+              <i class="fa-solid bg-white rounded-full w-7 h-7 text-btn-color-2 fa-cart-shopping ml-4 py-2 px-1">
+              </i>
+            </a>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </li>
+
+            </ul>
+          </div>
+          <a class="btn bg-btn-color rounded-full font-bold ml-4 hidden md:block py-2">Book Consult <i
+              class="-rotate-45 bg-black text-white rounded-full w-7 h-7 fa-solid fa-arrow-right py-2"></i></a>
+        </div>
+      </div>
+    </nav>
 
     <!-- Navigation style ends -->
     <!-- header-style starts-->
@@ -157,8 +246,8 @@
     <div>
       <div class="hero bg-white min-h-screen ">
         <div class="w-4/5 text-center">
-          <div class="w-3/5 mx-auto">
-            <button class="btn bg-green-200 rounded-full mt-4 mb-4"><a class="text-sm md:text-base" href=""><i
+          <div class="md:w-3/5 mx-auto">
+            <button class="btn bg-btn-color-3 rounded-full mt-4 mb-4"><a class="text-sm md:text-base" href=""><i
                   class="fa-solid fa-arrow-right mr-2"></i>Explore our
                 Latest
                 works</a></button>
@@ -170,36 +259,41 @@
             </p>
           </div>
           <!-- First section -->
-          <div class="grid grid-cols-1 mx-auto md:grid-cols-3 gap-6">
-            <div class="border border-gray-600 rounded-xl">
-              <img class="mx-auto" src="assets/img1.png" alt="">
+          <div class="grid  mx-auto  md:grid-cols-3 gap-6">
+            <div class="md:col-span-2 p-4 border border-border-color rounded-lg">
+              <div class="md:flex md:justify-between gap-4">
+                <div><img src="assets/img1.png" alt="">
+                </div>
+                <div class="text-start md:w-[60%]">
+                  <h4 class="font-bold text-2xl mb-2">Commercial</h4>
+                  <p class="text-base text-gray-500 mb-2">All non-residential facilities engaged in business or
+                    commerce, whether for profit or not-for-profit, or publicly or
+                    privately owned</p>
+                  <button><a class="font-bold text-xl" href="">View Details <i
+                        class="-rotate-45 bg-btn-color text-black rounded-full w-7 h-7 fa-solid fa-arrow-right py-1"></i></a></button>
+                </div>
+              </div>
             </div>
-            <div class="text-left border border-gray-600 rounded-xl">
-              <h4 class="font-bold text-2xl mb-2">Commercial</h4>
-              <p class="text-base text-gray-500 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                praesentium vel incidunt quibusdam
-                doloremque, culpa temporibus deserunt et. Animi, numquam?</p>
-              <button><a class="font-bold text-xl" href="">View Details</a></button>
-            </div>
-            <div class="border border-gray-600 rounded-xl">
-              <img class="mx-auto" src="assets/img2.png" alt="">
+            <div class="p-4 border border-border-color rounded-lg mx-auto">
+              <img src="assets/img2.png" alt="">
             </div>
           </div>
           <!-- Second section -->
           <div class="grid grid-cols-1 md:grid-cols-4 gap-6 my-6">
-            <div class="border border-gray-600 rounded-xl">
+            <div class="border p-4 border-border-color rounded-xl">
               <img class="mx-auto" src="assets/img3.png" alt="">
             </div>
-            <div class="border border-gray-600 rounded-xl">
+            <div class="border p-4 border-border-color rounded-xl">
               <img class="mx-auto" src="assets/img4.png" alt="">
             </div>
-            <div class="text-left border border-gray-600 rounded-xl">
+            <div class="text-left border p-4 border-border-color rounded-xl">
               <h4 class="font-bold text-2xl mb-2">Commercial</h4>
-              <p class="text-base text-gray-500 mb-2">The barn house captivates with its blend of rustic charm and
+              <p class="text-base  text-gray-500 mb-2">The barn house captivates with its blend of rustic charm and
                 modern.</p>
-              <button><a class="font-bold text-xl" href="">View Details</a></button>
+              <button><a class="font-bold text-xl" href="">View Details <i
+                    class="-rotate-45 bg-btn-color text-black rounded-full w-7 h-7 fa-solid fa-arrow-right py-1"></i></a></button>
             </div>
-            <div class="border border-gray-600 rounded-xl">
+            <div class="border p-4 border-border-color rounded-xl">
               <img class="mx-auto" src="assets/img5.png" alt="">
             </div>
           </div>
@@ -229,7 +323,7 @@
             </div>
             <textarea class="textarea w-full mt-4" placeholder="Write your message here"
               class="rounded-full"></textarea>
-            <button class="btn bg-green-400 rounded-full w-full mt-4">Send Mail <i
+            <button class="btn bg-btn-color rounded-full w-full mt-4">Send Mail <i
                 class="fa-solid fa-arrow-right w-7 h-7 justify-center items-center text-xl bg-black -rotate-45 rounded-full mr-2 text-white"></i></button>
           </div>
         </div>
@@ -240,7 +334,7 @@
   <footer class="footer footer-center bg-black text-primary-content p-10">
     <aside class="my-16">
       <h1 class="font-bold text-3xl text-white"><i
-          class="fa-solid fa-arrow-right w-8 h-8 text-2xl justify-center items-center  bg-green-400 -rotate-45 rounded-full mr-2 "></i>Rinterio
+          class="fa-solid fa-arrow-right w-8 h-8 text-2xl justify-center items-center  bg-btn-color -rotate-45 rounded-full mr-2 "></i>Rinterio
       </h1>
       <p class="font-bold text-base text-gray-400 w-full mt-4">
         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
@@ -254,7 +348,7 @@
         <li><a href="">Blogs</a></li>
         <li><a href="">Contact Us</a></li>
       </ul>
-      <button class="bg-green-400 rounded-full px-4 py-2 mt-12"><a
+      <button class="bg-btn-color rounded-full px-4 py-2 mt-12"><a
           class="text-black no-underline font-xl font-bold text-center" href="">Book
           Consult<i
             class="fa-solid fa-arrow-right w-7 h-7 justify-center items-center text-xl bg-black -rotate-45 rounded-full text-white ml-4"></i></a></button>
