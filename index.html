@@ -26,11 +26,24 @@
 
 <body class="google-font">
   <!--Header section -->
-  <header class="bg-gradient-to-t to-orange-50 from-white">
+  <header class="bg-gradient-to-t to-orange-50 from-white mx-auto">
     <!-- Navigation style starts -->
     <nav class="w-4/5 mx-auto my-3">
       <div class="navbar">
         <div class="navbar-start">
+          <a class="btn btn-ghost text-4xl"><i
+              class="fa-solid fa-arrow-right w-7 h-7 bg-green-400 -rotate-45 rounded-full mr-2 text-2xl "></i>Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-gray-400 hover:text-black font-bold" href="">Home</a></li>
+            <li><a class="text-gray-400 hover:text-black font-bold" href="">Service</a></li>
+            <li><a class="text-gray-400 hover:text-black font-bold" href="">Portfolio</a></li>
+            <li><a class="text-gray-400 hover:text-black font-bold" href="">Blog</a></li>
+            <li><a class="text-gray-400 hover:text-black font-bold" href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-5">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -46,26 +59,15 @@
               <li><a class="text-gray-400 hover:text-black font-bold" href="">Contact Us</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-4xl"><i
-              class="fa-solid fa-arrow-right bg-green-400 -rotate-45 rounded-full mr-2 "></i>Rinterio</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Home</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Service</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Portfolio</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Blog</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end gap-5">
-          <i class="fa-solid fa-magnifying-glass bg-white rounded-full"></i>
-          <i class="fa-solid fa-cart-shopping bg-white rounded-full"></i>
-          <button
-            class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none rounded-full px-5 py-2 font-bold focus:ring focus:ring-violet-300 ..."><a
-              href="">Save changes <i
-                class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-full "></i></a>
-          </button>
+          <div class=" hidden lg:block">
+            <i class="fa-solid fa-magnifying-glass bg-white w-8 h-8 text-base rounded-full mr-2"></i>
+            <i class="fa-solid fa-cart-shopping w-8 h-8 bg-white rounded-full mr-2"></i>
+            <button
+              class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none rounded-full px-5 py-2 font-bold focus:ring focus:ring-violet-300 ..."><a
+                class="text-center" href="">Save changes <i
+                  class="fa-solid fa-arrow-right bg-black w-[30px] h-[30px] items-center text-white -rotate-45 rounded-full "></i></a>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -86,16 +88,16 @@
             <button class="btn bg-green-300 mt-5 mb-20 rounded-full"><a
                 class="text-black no-underline font-bold text-xl" href="">View
                 Details <i
-                  class="fa-solid fa-arrow-right bg-green-500 ml-2 text-black -rotate-45 rounded-full "></i></a></button>
+                  class="fa-solid fa-arrow-right w-7 h-7 bg-green-500 ml-2 text-black -rotate-45 rounded-full "></i></a></button>
           </div>
         </div>
       </div>
     </div>
   </header>
   <!-- Main section -->
-  <main>
+  <main class="mx-auto">
     <!-- We design section starts -->
-    <div class="hero bg-base-200 min-h-screen relative">
+    <div class="hero bg-base-200 min-h-screen relative mx-auto">
       <img class="absolute top-10 left-28" src="assets/Vector.png" alt="Vector image sources ">
       <div class="hero-content flex-col lg:flex-row-reverse w-4/5 mx-auto">
         <!-- main images section -->
@@ -140,7 +142,7 @@
     </div>
     <!-- We design section ends -->
     <!-- Our works process section starts -->
-    <div class="hero bg-base-200 min-h-screen">
+    <div class="hero bg-base-200 min-h-screen mx-auto">
       <div class="hero-content text-center w-4/5 mx-auto">
         <div>
           <button class="btn bg-white rounded-full"><a class="no-underline font-bold" href=""><i
@@ -152,36 +154,36 @@
             metal accents.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="card bg-rose-200 w-full shadow-xl">
+            <div class="card bg-rose-200 w-full shadow-xl justify-start items-start">
               <figure>
-                <img class="" src="assets/concept.png" alt="concept image">
+                <img class="ml-7 mt-3" src="assets/concept.png" alt="concept image">
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Concept</h2>
                 <p class="text-left">The barn house captivates with its blend of rustic charm and modern.</p>
               </div>
             </div>
-            <div class="card bg-yellow-200 w-full shadow-xl">
+            <div class="card bg-yellow-200 w-full shadow-xl justify-start items-start">
               <figure>
-                <img src="assets/flow-chart.png" alt="flow-chart image">
+                <img class="ml-7 mt-3" src="assets/flow-chart.png" alt="flow-chart image">
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Design Process</h2>
                 <p class="text-left">The barn house captivates with its blend of rustic charm and modern.</p>
               </div>
             </div>
-            <div class="card bg-green-300 w-full shadow-xl">
+            <div class="card bg-green-300 w-full shadow-xl justify-start items-start">
               <figure>
-                <img src="assets/vision.png" alt="vision image">
+                <img class="ml-7 mt-3" src="assets/vision.png" alt="vision image">
               </figure>
               <div class="card-body ">
                 <h2 class="card-title">Supervision</h2>
                 <p class="text-left">The barn house captivates with its blend of rustic charm and modern.</p>
               </div>
             </div>
-            <div class="card bg-blue-400 w-full shadow-xl">
+            <div class="card bg-blue-400 w-full shadow-xl justify-start items-start">
               <figure>
-                <img class="" src="assets/budget-planning.png" alt="budget-planning image">
+                <img class="ml-7 mt-3" src="assets/budget-planning.png" alt="budget-planning image">
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Budget Planning</h2>
@@ -193,6 +195,49 @@
       </div>
     </div>
     <!-- Our worlds process section ends -->
+    <!-- Challenging starts section -->
+    <div>
+      <div class="hero bg-white min-h-screen">
+        <div class="w-4/5 text-center">
+          <div class="w-3/5 mb-5 mx-auto">
+            <button class="btn btn-primary">Explore our Latest works</button>
+            <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
+            <p class="py-6">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+              wood, sleek
+              metal accents.
+            </p>
+          </div>
+          <div>
+            <!-- First section -->
+            <div class="grid grid-cols-10">
+              <div class="bg-white grid grid-cols-6 gap-2 w-full rounded-lg">
+                <div class="col-span-2">
+                  <img class="px-4 py-4 w-full h-full" src="assets/img1.png" alt="">
+                </div>
+                <div class="grid col-span-4 text-left mr-5">
+                  <h4 class="font-bold text-xl mb-2">Commercial</h4>
+                  <p class="text-sm text-gray-500 mb-2 pr-8">The barn house captivates with its blend of rustic charm
+                    and
+                    modern. The barn house captivates with
+                    its blend of rustic
+                    charm and modern .</p>
+                  <button><a class="font-bold text-base" href="">View Details<i
+                        class="fa-solid fa-arrow-right ml-4"></i></a></button>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg grid col-span-2">
+                <img class="justify-center items-center" src="assets/img2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Second section -->
+          <div></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Challenging ends section -->
     <!-- main Application section starts -->
     <div class="hero bg-[url('assets/bg.jpg')] min-h-screen">
       <div class="hero-content text-center w-4/6">
@@ -215,7 +260,7 @@
             <textarea class="textarea w-full mt-4" placeholder="Write your message here"
               class="rounded-full"></textarea>
             <button class="btn bg-green-400 rounded-full w-full mt-4">Send Mail <i
-                class="fa-solid fa-arrow-right bg-black -rotate-45 rounded-full mr-2 text-white"></i></button>
+                class="fa-solid fa-arrow-right w-7 h-7 bg-black -rotate-45 rounded-full mr-2 text-white"></i></button>
           </div>
         </div>
       </div>
@@ -223,27 +268,28 @@
   </main>
   <!-- Footer section-->
   <footer>
-    <div>
+    <div class="mx-auto">
       <footer class="footer footer-center bg-black text-primary-content p-10">
         <aside class="my-16">
           <h1 class="font-bold text-3xl text-white"><i
-              class="fa-solid fa-arrow-right bg-green-400 -rotate-45 rounded-full mr-2 "></i>Rinterio</h1>
-          <p class="font-bold text-base text-gray-400 w-4/6 mt-4">
+              class="fa-solid fa-arrow-right w-7 h-7 text-2xl bg-green-400 -rotate-45 rounded-full mr-2 "></i>Rinterio
+          </h1>
+          <p class="font-bold text-base text-gray-400 w-full mt-4">
             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
             wood, sleek
             metal accents.
           </p>
-          <ul class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 w-full mt-12 sm:gap-4">
+          <ul class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 w-full mt-12 gap-5">
             <li><a href="">Home</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Portfolio</a></li>
             <li><a href="">Blogs</a></li>
             <li><a href="">Contact Us</a></li>
           </ul>
-          <button class="bg-green-400 rounded-full px-4 py-2 mt-12"><a class="text-black no-underline font-xl font-bold"
-              href="">Book
+          <button class="bg-green-400 rounded-full px-4 py-2 mt-12"><a
+              class="text-black no-underline font-xl font-bold text-center" href="">Book
               Consult<i
-                class="fa-solid fa-arrow-right bg-black -rotate-45 rounded-full text-white ml-4"></i></a></button>
+                class="fa-solid fa-arrow-right w-7 h-7 bg-black -rotate-45 rounded-full text-white ml-4"></i></a></button>
         </aside>
       </footer>
     </div>
