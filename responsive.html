@@ -5,45 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 3</title>
-  <!-- Tailwind-css and DaisyUI CMD -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts CMD -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- Font Awesome CMD -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts CMD -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS and DaisyUI CMD -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <!-- Stylesheet -->
   <style>
-    .google-font {
+    .font-family {
       font-family: "Manrope", sans-serif;
     }
   </style>
 </head>
 
-<body class="google-font">
-  <!--Header section -->
-  <header class="container mx-auto bg-gradient-to-t to-orange-100 from-white">
-    <!-- Navigation style starts -->
-    <nav class="w-4/5 mx-auto my-3">
+<body>
+  <!-- Header section -->
+  <header class="container mx-auto bg-gradient-to-t to-orange-50 from-white w-4/5">
+    <!-- Navbar section -->
+    <nav>
       <div class="navbar">
         <div class="navbar-start">
-          <a class="btn btn-ghost text-4xl"><i
-              class="fa-solid fa-arrow-right w-7 h-7 bg-green-400 -rotate-45 rounded-full justify-center items-center mr-2 text-xl "></i>Rinterio</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Home</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Service</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Portfolio</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Blog</a></li>
-            <li><a class="text-gray-400 hover:text-black font-bold" href="">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end gap-5">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -52,18 +39,40 @@
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a class="text-gray-400 hover:text-black font-bold" href="">Home</a></li>
-              <li><a class="text-gray-400 hover:text-black font-bold" href="">Service</a></li>
-              <li><a class="text-gray-400 hover:text-black font-bold" href="">Portfolio</a></li>
-              <li><a class="text-gray-400 hover:text-black font-bold" href="">Blog</a></li>
-              <li><a class="text-gray-400 hover:text-black font-bold" href="">Contact Us</a></li>
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
             </ul>
           </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
         </div>
       </div>
     </nav>
-    <!-- Navigation style ends -->
-    <!-- header-style starts-->
+    <!-- header section starts -->
     <div class="w-4/5 mx-auto">
       <div class="hero min-h-screen">
         <div class="hero-content text-center">
@@ -85,10 +94,11 @@
       </div>
     </div>
   </header>
+  <!-- Header section ends -->
   <!-- Main section -->
-  <main>
-    <!-- We design section starts -->
-    <div class="hero bg-base-200 min-h-screen relative container mx-auto">
+  <main class="w-4/5 container mx-auto">
+    <!-- We Design Thoughtful section -->
+    <div class="hero bg-base-200 min-h-screen">
       <img class="absolute top-10 left-28" src="assets/Vector.png" alt="Vector image sources ">
       <div class="hero-content flex-col lg:flex-row-reverse w-4/5 mx-auto">
         <!-- main images section -->
@@ -131,8 +141,7 @@
         </div>
       </div>
     </div>
-    <!-- We design section ends -->
-    <!-- Our works process section starts -->
+    <!-- Our works Process section -->
     <div class="hero bg-base-200 min-h-screen">
       <div class="hero-content text-center w-4/5 container mx-auto">
         <div>
@@ -185,101 +194,10 @@
         </div>
       </div>
     </div>
-    <!-- Our worlds process section ends -->
-    <!-- Challenging starts section -->
-    <div>
-      <div class="hero bg-white min-h-screen ">
-        <div class="w-4/5 text-center">
-          <div class="w-3/5 mb-5 mx-auto">
-            <button class="btn btn-primary">Explore our Latest works</button>
-            <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
-            <p class="py-6">
-              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
-              wood, sleek
-              metal accents.
-            </p>
-          </div>
-          <div>
-            <!-- First section -->
-            <div class="md:flex md:justify-around min-h-10 gap-2 container mx-auto ">
-              <div class="md:flex md:w-2/3 gap-2">
-                <div class=" md:w-1/3">
-                  <img class="w-full " src="assets/img1.png" alt="">
-
-                </div>
-                <div class=" w-full md:w-2/3 text-left">
-                  <h1>Commercial</h1>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quidem dolore provident sequi
-                    neque alias, facere veniam quaerat velit debitis.</p>
-                </div>
-
-
-              </div>
-              <div class="md:w-1/3">
-                <img class="w-full " src="assets/img2.png" alt="">
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Second section -->
-          <div></div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!-- Challenging ends section -->
-    <!-- main Application section starts -->
-    <div class="hero bg-[url('assets/bg.jpg')] min-h-screen">
-      <div class="hero-content text-center w-4/6">
-        <div class="w-full">
-          <button class="btn btn-primary rounded-full"><a href=""><i class="fa-solid fa-arrow-right mr-3"></i>Let's
-              Connect</a></button>
-          <h1 class="text-2xl mt-4 lg:text-5xl font-bold">Let’s Discuss Next Project</h1>
-          <p class="py-6">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
-            wood, sleek
-            metal accents.
-          </p>
-          <div>
-            <div class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-2 gap-4">
-              <input type="text" placeholder="First Name*" class="input w-full mx-auto rounded-full" />
-              <input type="text" placeholder="Last Name*" class="input w-full mx-auto rounded-full" />
-              <input type="text" placeholder="Phone Number*" class="input w-full mx-auto rounded-full" />
-              <input type="text" placeholder="Email Address*" class="input w-full mx-auto rounded-full" />
-            </div>
-            <textarea class="textarea w-full mt-4" placeholder="Write your message here"
-              class="rounded-full"></textarea>
-            <button class="btn bg-green-400 rounded-full w-full mt-4">Send Mail <i
-                class="fa-solid fa-arrow-right w-7 h-7 justify-center items-center text-xl bg-black -rotate-45 rounded-full mr-2 text-white"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
   </main>
-  <!-- Footer section-->
-  <footer class="footer footer-center bg-black text-primary-content p-10">
-    <aside class="my-16">
-      <h1 class="font-bold text-3xl text-white"><i
-          class="fa-solid fa-arrow-right w-8 h-8 text-2xl justify-center items-center  bg-green-400 -rotate-45 rounded-full mr-2 "></i>Rinterio
-      </h1>
-      <p class="font-bold text-base text-gray-400 w-full mt-4">
-        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
-        wood, sleek
-        metal accents.
-      </p>
-      <ul class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 w-full mt-12 gap-5">
-        <li><a href="">Home</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Blogs</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
-      <button class="bg-green-400 rounded-full px-4 py-2 mt-12"><a
-          class="text-black no-underline font-xl font-bold text-center" href="">Book
-          Consult<i
-            class="fa-solid fa-arrow-right w-7 h-7 justify-center items-center text-xl bg-black -rotate-45 rounded-full text-white ml-4"></i></a></button>
-    </aside>
+  <!-- Footer section -->
+  <footer>
+
   </footer>
 </body>
 
